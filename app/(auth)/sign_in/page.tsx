@@ -12,10 +12,16 @@ const SignIn = () => {
     agreeToTerms: false
   });
 
-  const handleSubmit = (e) => {
+// interface Credentials {
+//     email: string;
+//     password: string;
+//     agreeToTerms: boolean;
+// }
+
+const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     // Handle login logic here
-  };
+};
 
   return (
     <div className="w-full min-h-screen bg-gray-900 flex flex-col items-center justify-center p-4">
